@@ -4,13 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Videos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .video-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .video-title {
+            margin-top: 10px;
+        }
+        nav a {
+            display: inline-block;
+            margin: 10px 20px;
+            text-decoration: none;
+            color: #007acc;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <h1>Videos</h1>
-    <video controls>
-        <source src="videos/markov_chain_homework.mp4" type="video/mp4">
-	<source src="videos/final_report_video.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </videos>
+    
+    <div class="video-container">
+        <h2 class="video-title">Markov Chain Homework</h2>
+        <video controls width="600">
+            <source src="videos/markov_chain_homework.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    
+    <div class="video-container">
+        <h2 class="video-title">Final Report Video</h2>
+        <video controls width="600">
+            <source src="videos/final_report_video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="final_report.html">Final Report</a>
+        <a href="lecture_summary.html">Lecture Summary</a>
+        <a href="tasks.html">Tasks</a>
+        <a href="homeworks.html">Homeworks</a>
+    </nav>
 </body>
 </html>
